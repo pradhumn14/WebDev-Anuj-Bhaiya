@@ -44,6 +44,7 @@
     border: 2px solid green;
     /* margin: 10px; */
     width: 80px;
+    /* flex basis: 20px */
     /* flex-basis: 25%; */
 }
 
