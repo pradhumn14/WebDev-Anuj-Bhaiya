@@ -49,8 +49,8 @@
 }
 
 #box-1 {
-    /* order: 1;
-    flex-grow: 1;
+    order: 1;
+    /* flex-grow: 1;
     flex-shrink: 2; */
     /* flex-basis: 200px; */
 }
@@ -66,5 +66,5 @@
 }
 
 #box-4 {
-    /* flex-shrink: 3; */
+    flex-shrink: 3;
 }
