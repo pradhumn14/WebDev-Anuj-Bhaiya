@@ -7,12 +7,63 @@
     height: 400px;
     border: 2px solid red;
     display: flex;
+
     /* flex-direction: column-reverse; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+
+    /* shorthand property for wrap and dirn is flow  */
+    flex-flow: wrap row;
+    /* flex-flow: row; */
+
+    /* gap: 10px; */
+    /* row-gap: 10px;
+    column-gap: 20px; */
+
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* default property */
+    justify-content: flex-start;
+    justify-content: flex-end;
+
+    justify-content: center;
+
+    /* align items default property */
+    align-items: stretch;
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    /* align-content: flex-end;
+    align-content: flex-start; */
+    /* align-content: space-between; */
 }
 
 .box {
     border: 2px solid green;
-    margin: 10px 0;
+    /* margin: 10px; */
     width: 80px;
+    /* flex-basis: 25%; */
+}
+
+#box-1 {
+    /* order: 1;
+    flex-grow: 1;
+    flex-shrink: 2; */
+    /* flex-basis: 200px; */
+}
+
+#box-3 {
+    /* order: 2; */
+    /* flex-grow: 2; */
+
+    /* 1st-grow 2nd-shrink 3rd-basis */
+    flex: 0 0 200px;
+    align-self: flex-start;
+    align-self: stretch;
+}
+
+#box-4 {
+    /* flex-shrink: 3; */
 }
