@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    border: 2px solid red;
+    display: grid;
+    /* gap: 10px; */
+    row-gap: 20px;
+    /* column gap not visible as it has only 1 column */
+    column-gap: 5px;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-columns: 20vw 200px 300px;
+    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    /* shorthand property */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: auto auto;
+    grid-template-columns: auto 100px;
+    grid-template-columns: 200px auto auto;
+    /* both below will do the same work */
+    grid-template-columns: 200px auto auto;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 200px 200px;
+
+    /* grid-template-rows: 200px 80px; */
+    /* grid-auto-rows: 150px; */
+
+    /* justify content doesn't work with (fr) */
+    /* justify-content: center; */
+
+    /* align-content: center; */
+    align-items: center;
+}
+
+.box {
+    border: 2px solid green;
+    padding: 12px;
+}
+
+#box-1 {
+    
+}
