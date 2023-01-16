@@ -59,6 +59,11 @@ body {
 .box:hover {
     background-color: #999;
     background-position: center;
+
+    /* formatting of box shadow */
+    /* box-shadow: horizontal vertical blur color; */
+    box-shadow: 0 0 4px #fff;
+    
 }
 
 .row-2 {
