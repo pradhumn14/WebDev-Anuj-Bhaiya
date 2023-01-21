@@ -3,4 +3,66 @@ body {
     background-color: red;
 }
 
-@media 
+/* @media (width <= 400px) {
+    body {
+        background-color: green;
+    }
+} */
+
+/* @media (orientation: portrait) {
+    body {
+        background-color: green;
+    }
+} */
+
+/* @media (width <= 200px) {
+    body {
+        background-color: yellow;
+    }
+} */
+
+/* max-width is in decreasing order */
+
+/* @media (max-width: 400px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (max-width: 200px) {
+    body {
+        background-color: gold;
+    }
+} */
+
+/* min-width is in increasing order */
+
+/* @media (min-width: 400px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: gold;
+    }
+} */
+
+
+
+/* can read both in this way */
+/* min-widht -> starting from */
+/* max-width -> upto */
+
+/* @media (min-width: 400px) and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+} */
+
+@media (400px <= width <= 600px) {
+    body {
+        background-color: green;
+    }
+}
