@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #222;
+    /* --primary-text-color: rgb(206, 216, 208); */
+    --secondary-text-color: #444;
+    --card-background-color: #fff;
+    --background-color: #eee;
+    --default-margin: 50px;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 40px;
+    /* --my-var: red; */
+    background-color: var(--background-color);
+}
+
+h1 {
+    text-align: center;
+    /* background-color: var(--my-var, green); */
+    color: var(--primary-text-color);
+}
+
+.box {
+    /* --my-var: yellow; */
+    padding: var(--default-margin);
+    margin-block: var(--default-margin);
+    border-radius: var(--default-margin);
+    background-color: var(--card-background-color);
+}
+
+.box h2 /* or h2 directly */ {
+    color: var(--primary-text-color);
+    margin-bottom: var(--default-margin);
+    /* background-color: var(--my-var); */
+}
+
+p {
+    color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        --my-var: pink;
+    }
+}
